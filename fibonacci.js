@@ -1,8 +1,8 @@
 const fibonacciForLoop = (n) => {
-  let first = 0;
+  let first = 1;
   let second = 1;
 
-  for (let i = 2; i <= n; i++) {
+  for (let i = 3; i <= n; i++) {
     let newFibonacci = first + second;
     first = second;
     second = newFibonacci;
@@ -29,3 +29,5 @@ const fibonacciN = (n) => {
   }
   return fibonacciN(n - 1) + fibonacciN(n - 2);
 };
+
+console.log(fibonacciForLoop(77));
